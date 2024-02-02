@@ -1,4 +1,13 @@
+/* Font */
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/Roboto/Roboto-Regular.woff2") format("woff2"),
+        url("assets/Roboto/Roboto-Regular.woff") format("woff");
+    /* Additional font properties can be added here */
+}
+
 * {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 h1 {
@@ -25,17 +34,22 @@ h1 {
 .header-player img {
   margin-left: 200px;
   padding-right: 800px;
-  height: 50px;
+  height: 100px;
 }
 
 .header-player h6 a {
   outline-color: transparent;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .header-player h6 a:link,
 a:visited {
   color: #e5e7eb;
+}
+
+.header-player h6 a:hover {
+    color: aqua
 }
 
 .teams {
