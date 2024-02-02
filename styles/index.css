@@ -187,15 +187,16 @@ main {
     font-weight: lighter;
     font-style: italic;
     color: #1f2937;
-    margin-bottom: auto;
 }
 
-.cite {
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-    align-self: flex-end;
-    margin-top: auto;
+
+
+.section-content {
+    text-align: left;
+    padding: 0 20px;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .call-to-action {
