@@ -54,6 +54,7 @@ nav ul,
 .hero-main-text {
     font-size: 40px;
     font-weight: 800;
+    margin: 0;
 }
 
 .hero-secondary-text {
@@ -223,5 +224,39 @@ nav ul,
 /* Footer Styles */
 .footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px 40px 30px 80px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+.section-content {
+    text-align: left;
+    padding: 0 20px;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Additional styling for better responsiveness */
+@media (max-width: 768px) {
+    .first-section {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        align-items: flex-start;
+    }
+
+    .image-container {
+        max-width: 100%;
+        /* Allow image to take full width on smaller screens */
+    }
 }
