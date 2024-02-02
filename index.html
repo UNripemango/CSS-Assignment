@@ -5,34 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS-Assignment/styles/index.css">
 </head>
 
 <body>
-    <header>
+    <header class="hero">
         <div class="logo-container">
-            <img src="../CSS-Assignment/assets/soccerlogo.png" alt="Your Logo">
-            <span class="logo-text">Soccer/Futbol</span>
+            <a href="../CSS-Assignment/index.html">
+                <img src="../CSS-Assignment/assets/soccerlogo.png" alt="Your Logo">
+                <span class="header-logo-text">Soccer/Futbol</span>
+            </a>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Players</a></li>
-                <li><a href="#">Teams</a></li>
-                <li><a href="#">Coaches</a></li>
+                <li class="header-link-text"><a href="#">Players</a></li>
+                <li class="header-link-text"><a href="#">Teams</a></li>
+                <li class="header-link-text"><a href="#">Coaches</a></li>
             </ul>
         </nav>
-        <section>
-            <div>
-                <h1>Explore the world of soccer</h1>
-                <p>Discover the skills, strategies, and stories that define the captivating realm of soccer, featuring
-                    in-depth insights into players, teams, and coaches.</p>
-                <button>Learn More</button>
-            </div>
-            <img src="../CSS-Assignment/assets/landingimage1.jpeg" alt="collage of soccer stars">
-        </section>
     </header>
     <main>
+        <section class="first-section">
+            <div class="section-content">
+                <h1 class="hero-main-text">Legends of the game</h1>
+                <p class="hero-secodary-text">Discover the skills, strategies, and stories that define the captivating
+                    realm of soccer, featuring
+                    in-depth insights into players, teams, and coaches.</p>
+                <button class="button">Learn More</button>
+            </div>
+            <div class="image-containter">
+                <img src="../CSS-Assignment/assets/landingimage1.jpeg" alt="collage of soccer stars">
+            </div>
+        </section>
         <section>
-            <h2>Stars of today, legends from yesterday.</h2>
+            <h2 class="information-header">Stars of today, legends from yesterday.</h2>
             <div>
                 <figure>
                     <img src="image1.jpg" alt="Image 1">
@@ -64,31 +70,31 @@
             </div>
         </section>
 
-        <section>
-            <blockquote>
+        <section class="quote-section">
+            <blockquote class="quote">
                 "Talent without working hard is nothing."
             </blockquote>
 
             <cite>- Cristiano Ronaldo</cite>
-            <blockquote>
+            <blockquote class="quote">
                 "You can overcome anything, if, and only if, you love something enough."
             </blockquote>
 
             <cite>- Lionel Messi</cite>
 
-            <blockquote>
+            <blockquote class="quote">
                 "It's hard to beat somebody that never gives up."
             </blockquote>
 
             <cite>- Megan Rapinoe</cite>
         </section>
-        <section>
+        <section class="call-to-action">
             <h4>Discover more about soccer!</h4>
             <p>Find out more about the history of the most beloved sport in the world here!</p>
-            <button></button>
+            <button class="button" style="border: 1px solid white;">Wiki Link</button>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Your Soccer Website. All rights reserved.</p>
     </footer>
 </body>
