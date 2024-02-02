@@ -54,7 +54,6 @@ nav ul,
 .hero-main-text {
     font-size: 40px;
     font-weight: 800;
-    margin: 0;
 }
 
 .hero-secondary-text {
@@ -77,19 +76,22 @@ nav ul,
     box-shadow: none;
 }
 
-.call-to-action,
-.information-header {
+.call-to-action {
     background-color: #3882f6;
+
+    margin: 5% 25%;
+    border-radius: 10px;
+    text-align: start;
+    /* Center the text horizontally within the box */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.information-header {
-    font-size: 36px;
-    font-weight: 800;
-    color: #1f2937;
-}
-
-.quote-section {
-    background-color: #e5e7eb;
+.call-to-action-content {
+    margin: 20px;
+    /* Add space around the content */
+    padding: 20px 50px;
 }
 
 .call-to-action-content h3,
@@ -104,7 +106,6 @@ nav ul,
 
 
 
-/* First Section Styles */
 .first-section {
     background-color: #1f2937;
     text-align: center;
@@ -129,6 +130,7 @@ nav ul,
 
 .landingimage1 {
     width: 70%;
+    /* Take up all available width within the container */
     height: auto;
     display: block;
     margin: 0 auto;
@@ -225,106 +227,5 @@ nav ul,
 /* Footer Styles */
 .footer {
     text-align: center;
-    padding: 10px 40px 30px 80px;
-    box-sizing: border-box;
-    color: white;
-    display: flex;
-    align-items: center;
-}
-
-
-.section-content {
-    text-align: left;
-    padding: 0 20px;
-    box-sizing: border-box;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-img {
-    max-width: 40%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Additional styling for better responsiveness */
-@media (max-width: 768px) {
-    .first-section {
-        flex-direction: column;
-        /* Stack items vertically on smaller screens */
-        align-items: flex-start;
-    }
-
-    .image-container {
-        max-width: 100%;
-        /* Allow image to take full width on smaller screens */
-    }
-}
-
-.second-section {
-    text-align: center;
-    padding: 40px;
-    padding-top: 0;
-    box-sizing: border-box;
-}
-
-.information-header {
-    font-size: 36px;
-    font-weight: 800;
-    color: #1f2937;
-}
-
-.second-section div {
-    display: flex;
-    justify-content: center;
-}
-
-figure {
-    margin: 0 15px;
-    /* Adjust margin as needed */
-}
-
-img {
-    width: 150px;
-    max-width: 100%;
-    height: 150px;
-    display: block;
-    border: 3px solid #3882f6;
-    border-radius: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-figcaption {
-    font-size: 14px;
-    color: #666;
-    margin-top: 10px;
-}
-
-.quote-section {
-    background-color: #e5e7eb;
-    padding: 40px 30%;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.quote-container {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.quote {
-    font-size: 24px;
-    font-style: italic;
-    color: #1f2937;
-}
-
-.cite {
-    font-size: 14px;
-    font-weight: bold;
-    color: black;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    padding: 20px;
 }
