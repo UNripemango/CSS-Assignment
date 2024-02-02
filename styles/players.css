@@ -1,88 +1,90 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url(fonts/Roboto-Bold.ttf);
+  font-family: "Roboto";
+  src: url(fonts/Roboto-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
-
-h1{
-    font-family: 'Roboto';
-    height: 18px;
+h1 {
+  font-family: "Roboto";
+  height: 18px;
 }
 
 .nav-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937;
 }
 
 .header-player {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header-player h6 {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .header-player img {
-    margin-left: 200px;
-    padding-right: 800px;
-    height: 50px;
+  margin-left: 200px;
+  padding-right: 800px;
+  height: 50px;
 }
 
 .header-player h6 a {
-    outline-color: transparent;
-    text-decoration: none;
+  outline-color: transparent;
+  text-decoration: none;
 }
 
-.header-player h6 a:link, a:visited {
-    color: #e5e7eb;
+.header-player h6 a:link,
+a:visited {
+  color: #e5e7eb;
 }
 
 .players {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .players h1 {
-    font-family: 'Roboto';
-    text-align: center;
-    padding-bottom: 20px;
-    color: #0e0f0d;
+  font-family: "Roboto";
+  text-align: center;
+  padding-bottom: 20px;
+  color: #0e0f0d;
 }
 
-
-.ronaldo, .messi, .pele {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #e5e7eb;
+.ronaldo,
+.messi,
+.pele {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #e5e7eb;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 p {
-    color: #555;
-    line-height: 1.5;   
+  color: #555;
+  line-height: 1.5;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  background-color: #1f2937;
 }
 
 .footer p {
-    color: #e5e7eb;
+  color: #e5e7eb;
 }
-
-
