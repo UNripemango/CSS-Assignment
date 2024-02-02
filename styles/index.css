@@ -189,6 +189,14 @@ main {
     color: #1f2937;
 }
 
+.cite {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
 
 
 .section-content {
@@ -224,7 +232,7 @@ main {
 
 .call-to-action-button {
     margin-right: 50px;
-    font-size: 10px;
+    font-size: small;
     border: 1px solid white;
     border-radius: 5px;
 }
