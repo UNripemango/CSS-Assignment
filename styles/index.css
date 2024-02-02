@@ -76,12 +76,13 @@ nav ul,
     box-shadow: none;
 }
 
-/* Call-to-Action Section Styles */
 .call-to-action {
     background-color: #3882f6;
+
     margin: 5% 25%;
     border-radius: 10px;
     text-align: start;
+    /* Center the text horizontally within the box */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -89,6 +90,7 @@ nav ul,
 
 .call-to-action-content {
     margin: 20px;
+    /* Add space around the content */
     padding: 20px 50px;
 }
 
@@ -102,7 +104,8 @@ nav ul,
     margin-right: 50px;
 }
 
-/* First Section Styles */
+
+
 .first-section {
     background-color: #1f2937;
     text-align: center;
@@ -127,6 +130,7 @@ nav ul,
 
 .landingimage1 {
     width: 70%;
+    /* Take up all available width within the container */
     height: auto;
     display: block;
     margin: 0 auto;
