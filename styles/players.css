@@ -17,6 +17,7 @@
 
 h1 {
   height: 18px;
+  margin-bottom: 20px;
 }
 
 .header {
@@ -53,6 +54,7 @@ h1 {
     color: #e5e7eb;
     font-size: 20px;
     transition: 0.6s;
+    padding-right: 10px;
 }
 
 .navbar ul li a:hover {
@@ -75,11 +77,21 @@ h1 {
 .ronaldo,
 .messi,
 .pele {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 8px;
   background-color: #e5e7eb;
+}
+
+.ronaldo, 
+.messi,
+.pele  p {
+   text-align: start;
 }
 
 img {
@@ -88,6 +100,8 @@ img {
   border-radius: 8px;
   margin-bottom: 10px;
 }
+
+
 
 
 .footer {
@@ -99,4 +113,119 @@ img {
     color: white;
 }
   
-  
+@media screen and (max-width: 768px) {
+    .header a img {
+        height: 100px
+    }
+
+    .ronaldo,
+    .messi,
+    .pele {
+        flex-direction: column; 
+    }
+
+    .ronaldo,
+    .messi,
+    .pele img {
+        max-width: 100%; 
+        height: auto;
+    }
+
+    .ronaldo,
+    .messi,
+    .pele p {
+        text-align: center; 
+        font-size: 16px; 
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar ul li a:hover {
+        color: aqua;
+    }
+    
+
+    .header a {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .header a img {
+        height: 90px;
+        max-width: 900%;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        background-color: #1f2937;
+        color: #fff;
+        text-align: center;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        transition: color 0.6s;
+    }
+
+    .navbar a:hover {
+        color: aqua;
+    }
+
+    .teams {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .teams h1 {
+        font-size: 20px;
+    }
+
+    .ronaldo,
+    .messi,
+    .pele {
+        margin-bottom: 20px;
+        background-color: #e5e7eb;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .ronaldo img,
+    .messi img,
+    .pele img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .ronaldo p,
+    .messi p,
+    .pele p {
+        text-align: center;
+        font-size: 14px;
+    }
+}
