@@ -85,8 +85,8 @@ main {
 }
 
 .first-section div img {
-    width: 500px;
-    height: 250px;
+    width: 100%;
+    height: auto;
 }
 
 .first-section div h1 {
@@ -101,14 +101,27 @@ main {
     color: #e5e7eb;
 }
 
-.first-section button {
+/* .first-section button {
     border: none;
     background: #3882f6;
     padding: 10px;
     color: white;
     border-radius: 10px;
     cursor: pointer;
+} */
+
+.section-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3882f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-right: 50px;
 }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -126,7 +139,7 @@ main {
 .second-section {
     text-align: center;
     padding: 0px 40px 60px 40px;
-    padding-top: 0;
+    padding-top: 30px;
     box-sizing: border-box;
 }
 
@@ -143,6 +156,7 @@ main {
 .second-section div {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 /* Image Section Styles */
@@ -173,6 +187,7 @@ main {
     padding: 40px 30%;
     box-sizing: border-box;
     text-align: center;
+    justify-content: space-between;
 }
 
 .quote-container {
@@ -180,6 +195,7 @@ main {
     flex-direction: column;
     align-items: center;
     height: 100%;
+    margin-bottom: 20px;
 }
 
 .quote {
@@ -187,6 +203,7 @@ main {
     font-weight: lighter;
     font-style: italic;
     color: #1f2937;
+    margin-bottom: auto;
 }
 
 .cite {
@@ -194,7 +211,7 @@ main {
     font-weight: bold;
     color: black;
     align-self: flex-end;
-    margin-top: auto;
+    /* margin-top: auto; */
 }
 
 
@@ -230,16 +247,26 @@ main {
     color: white;
 }
 
-.call-to-action-button {
-    margin-right: 50px;
-    font-size: small;
-    border: 1px solid white;
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3882f6;
+    color: white;
+    text-decoration: none;
     border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-right: 50px;
 }
 
+.button:hover {
+    background-color: #1f2937;
+}
 
 /* Footer Styles */
 .footer {
     text-align: center;
     padding: 20px;
+    color: white;
 }
