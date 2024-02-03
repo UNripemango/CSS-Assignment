@@ -110,6 +110,29 @@ main {
     cursor: pointer;
 } */
 
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3882f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.button:hover {
+    background-color: #1f2937;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
 .section-button a {
     display: inline-block;
     padding: 10px 20px;
@@ -244,29 +267,5 @@ main {
 .call-to-action-content h3,
 .call-to-action-content p {
     margin: 0;
-    color: white;
-}
-
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #3882f6;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 1px solid white;
-    cursor: pointer;
-    margin-right: 50px;
-}
-
-.button:hover {
-    background-color: #1f2937;
-}
-
-/* Footer Styles */
-.footer {
-    text-align: center;
-    padding: 20px;
     color: white;
 }
