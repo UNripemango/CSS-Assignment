@@ -75,8 +75,9 @@ body {
 }
 .Coachs article div {
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 40%;
 }
 .Coachs article div img {
   width: 200px;
@@ -143,6 +144,9 @@ body {
   .navbar {
     padding-right: 10%;
   }
+    .Coachs article {
+      width: 70%;
+    }
   .Coachs article div h1 {
     font-size: 15px;
   }
@@ -167,6 +171,7 @@ body {
   .navbar {
     padding-right: 30%;
   }
+    
 }
 @media (max-width: 400px) {
   .navbar {
