@@ -1,24 +1,18 @@
 /* Font */
 @font-face {
     font-family: "Roboto";
-    src: url("assets/Roboto/Roboto-Regular.woff2") format("woff2"),
-        url("assets/Roboto/Roboto-Regular.woff") format("woff");
+    src: url("../assets/Roboto/Roboto-Medium.ttf") format("woff2"),
+        url("../assets/Roboto/Roboto-Regular.woff") format("woff");
 }
 
 * {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-}
-
-.header,
-.footer,
-.first-section {
-    background-color: #1f2937;
+    max-width: 100%;
+    height: auto;
 }
 
 .header {
@@ -26,7 +20,8 @@ body {
     height: 110px;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 40px;
+    align-items: center;
+    background-color: #1f2937;
 }
 
 .header a {
@@ -39,12 +34,12 @@ body {
 
 .navbar {
     width: 20%;
+    justify-content: space-between;
 }
 
 .navbar ul {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
 }
 
 .navbar ul li {
@@ -62,8 +57,66 @@ body {
     color: aqua;
 }
 
+.header,
+.footer,
+.first-section {
+    background-color: #1f2937;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        height: auto;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header a {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        margin: 0;
+    }
+
+    .header a img {
+        height: 80px;
+    }
+
+    .navbar {
+        width: 100%;
+        order: -1;
+        /* Move the navbar above the logo in the mobile view */
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        /* Display list items in a row */
+        justify-content: center;
+        /* Center list items horizontally */
+        margin-top: 10px;
+        /* Add some space between logo and list items */
+    }
+
+    .navbar ul li {
+        margin-right: 10px;
+        /* Add some space between list items */
+    }
+
+    .navbar ul li:last-child {
+        margin-right: 0;
+        /* Remove margin for the last list item */
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+}
+
 main {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,13 +167,6 @@ main {
     background-color: #1f2937;
 }
 
-/* Footer Styles */
-.footer {
-    text-align: center;
-    padding: 20px;
-    color: white;
-}
-
 .section-button a {
     display: inline-block;
     padding: 10px 20px;
@@ -133,15 +179,29 @@ main {
     margin-right: 50px;
 }
 
-
 @media (max-width: 768px) {
+
     .first-section {
         flex-direction: column;
         align-items: flex-start;
     }
 
+    .first-section div {
+        width: 100%;
+        text-align: center;
+    }
+
     .image-container {
         max-width: 100%;
+    }
+
+    .section-button a {
+        margin: 0;
+        align-items: center;
+    }
+
+    .button {
+        margin: 0;
     }
 }
 
@@ -158,23 +218,25 @@ main {
     color: #1f2937;
 }
 
-.quote-section {
-    background-color: #e5e7eb;
+.specific-images {
+    display: flex;
+    justify-content: space-around;
 }
 
-.second-section div {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+.specific-images a {
+    text-decoration: none;
 }
 
 .specific-images figure {
     margin: 0 15px;
+    margin-bottom: 10px;
 }
 
 .specific-images img {
+    margin: 0 15px;
+    max-width: 150px;
+    max-height: 150px;
     width: 150px;
-    max-width: 100%;
     height: 150px;
     display: block;
     border: 3px solid #3882f6;
@@ -186,23 +248,125 @@ main {
 .specific-images figcaption {
     font-size: 14px;
     color: #666;
-    margin-top: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.second-section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .specific-images {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .specific-images a {
+        flex-basis: 48%;
+        justify-content: center;
+        max-width: 60%;
+        max-height: auto;
+    }
+
+    .specific-images figure {
+        display: inline-block;
+        margin: 0 15px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .quote-section {
+        background-color: #e5e7eb;
+        width: 100%;
+        padding: 40px 30%;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .quote-container {
+        display: flex;
+        max-width: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 20px;
+        padding: 50px;
+    }
+
+    .quote {
+        font-size: 36px;
+        font-weight: lighter;
+        font-style: italic;
+        color: #1f2937;
+        margin-bottom: auto;
+        align-self: flex-start;
+    }
+
+    .cite {
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+        font-style: normal;
+        align-self: center;
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+
+    .call-to-action {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .call-to-action-content {
+        padding: 20px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .call-to-action-content h3 {
+        margin-bottom: 10px;
+    }
+
+    .call-to-action-content p {
+        margin-bottom: 0;
+    }
+
+    .call-to-action a {
+        align-items: center;
+    }
+
+    .call-to-action-button {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
 }
 
 .quote-section {
     background-color: #e5e7eb;
+    width: 100%;
     padding: 40px 30%;
     box-sizing: border-box;
     text-align: center;
-    justify-content: space-between;
 }
 
 .quote-container {
     display: flex;
+    max-width: auto;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     height: 100%;
     margin-bottom: 20px;
+    padding: 50px;
 }
 
 .quote {
@@ -211,31 +375,23 @@ main {
     font-style: italic;
     color: #1f2937;
     margin-bottom: auto;
+    align-self: center;
 }
 
 .cite {
     font-size: 24px;
     font-weight: bold;
     color: black;
-    align-self: flex-end;
-    /* margin-top: auto; */
-}
-
-
-
-.section-content {
-    text-align: left;
-    padding: 0 20px;
-    box-sizing: border-box;
-    max-width: 800px;
-    margin: 0 auto;
+    font-style: normal;
+    align-self: end;
+    margin-top: 10px;
 }
 
 .call-to-action {
     background-color: #3882f6;
-
-    margin: 5% 25%;
-    border-radius: 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 5px;
     text-align: start;
     display: flex;
     align-items: center;
@@ -247,8 +403,24 @@ main {
     padding: 20px 50px;
 }
 
-.call-to-action-content h3,
+.call-to-action-content h3 {
+    margin: 0;
+    color: white;
+    font-weight: 400;
+}
+
 .call-to-action-content p {
     margin: 0;
+    color: #e5e7eb;
+    font-weight: 100;
+}
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1f2937;
+    text-align: center;
+    padding: 20px;
     color: white;
 }
