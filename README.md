@@ -25,3 +25,5 @@ cd your-repo
 
 # Open index.html in your browser
 
+## Preview Link
+https://unripemango.github.io/CSS-Assignment/
