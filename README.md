@@ -6,6 +6,9 @@ CSS Assignment for Group B.
 
 The Modern Web Design Project is an example project demonstrating modern web design techniques. It includes a header, footer, various sections, and responsive design to ensure a seamless experience across different devices.
 
+## Preview Link
+https://unripemango.github.io/CSS-Assignment/
+
 ## Key Features
 
 - Responsive design for different screen sizes.
@@ -25,5 +28,3 @@ cd your-repo
 
 # Open index.html in your browser
 
-## Preview Link
-https://unripemango.github.io/CSS-Assignment/
