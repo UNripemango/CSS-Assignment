@@ -6,12 +6,12 @@
 }
 
 * {
-    margin: 0;
     font-family: "Roboto", sans-serif;
+    margin: 0;
 }
 
 body {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -34,7 +34,6 @@ body {
 
 .navbar {
     width: 20%;
-    justify-content: space-between;
 }
 
 .navbar ul {
@@ -57,61 +56,60 @@ body {
     color: aqua;
 }
 
-.header,
-.footer,
 .first-section {
     background-color: #1f2937;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
     .header {
-        display: flex;
-        height: auto;
-        flex-direction: row-reverse;
-        justify-content: flex-start;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .header a {
         width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-        margin: 0;
-    }
-
-    .header a img {
         height: 80px;
     }
 
-    .navbar {
-        width: 100%;
-        order: -1;
-        /* Move the navbar above the logo in the mobile view */
-    }
-
-    .navbar ul {
-        flex-direction: row;
-        /* Display list items in a row */
-        justify-content: center;
-        /* Center list items horizontally */
-        margin-top: 10px;
-        /* Add some space between logo and list items */
-    }
-
-    .navbar ul li {
-        margin-right: 10px;
-        /* Add some space between list items */
-    }
-
-    .navbar ul li:last-child {
-        margin-right: 0;
-        /* Remove margin for the last list item */
+    .header a img {
+        height: 70px;
     }
 
     .navbar ul li a {
-        font-size: 16px;
-        padding: 5px 0;
+        font-size: 55%;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .header {
+        height: 80px;
+    }
+}
+
+@media (max-width: 610px) {
+    .navbar {
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 520px) {
+    .navbar {
+        padding-right: 20%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .navbar {
+        padding-right: 30%;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        padding-right: 40%;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar {
+        padding-right: 50%;
     }
 }
 
